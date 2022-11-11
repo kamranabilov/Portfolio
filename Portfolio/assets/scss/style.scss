@@ -621,7 +621,7 @@
                     display: inline-block;
                     a{
                         font-family: Roboto Mono,monospace;
-                        padding-right: 90px;
+                        padding-right: 50px;
                         color: #999;
                         font-weight: 700;
                         text-decoration: none;
@@ -639,7 +639,7 @@
                     @media screen and (max-width: 900px) and (min-width: 300px) {
                         a{
                             display: flex;
-                            padding: 5px;
+                            padding: 1px;
                         }
                     }
                 }
