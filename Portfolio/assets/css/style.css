@@ -9,7 +9,7 @@
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 100px;
+  bottom: 55px;
   right: 10px;
   z-index: 99;
   font-size: 18px;
@@ -27,10 +27,11 @@
 .style-switcher {
   position: fixed;
   right: 0px;
-  bottom: 15%;
+  bottom: 35%;
   z-index: 100;
   transition: all .6s; }
   .style-switcher .switcher_control {
+    transition: .4s ease;
     position: absolute;
     top: 0;
     left: -50px;
@@ -52,9 +53,12 @@
       left: 50%;
       margin-left: -15px; }
   .style-switcher .switcher_list {
-    bottom: 15%;
-    display: none;
-    padding: 10px 5px 0 10px;
+    transition: .4s;
+    bottom: -48px;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    padding: 9px 9px 8px 11px;
     background: #fefefe;
     box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.4); }
     .style-switcher .switcher_list .switcher_link {
@@ -131,14 +135,14 @@
 
 .overlay {
   height: 100%;
-  width: 100%;
+  width: 0%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: -24px;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s; }
+  transition: .5s ease-in; }
   .overlay .closebtn {
     position: absolute;
     top: -10px;
@@ -524,7 +528,8 @@
               opacity: 1; }
           @media screen and (max-width: 900px) and (min-width: 300px) {
             .sectionThree .portfolio-menu nav ul li a {
-              display: flex; } }
+              display: flex;
+              padding: 9px; } }
     .sectionThree .portfolio-menu .contentshow {
       color: #6d56c1;
       text-decoration: underline; }
@@ -575,6 +580,11 @@
           .sectionThree .portfolio-cards .project-card .project-card_info .tags li a {
             text-decoration: none;
             color: #4a4a4a; }
+          @media screen and (max-width: 900px) and (min-width: 300px) {
+            .sectionThree .portfolio-cards .project-card .project-card_info .tags li a {
+              display: flex;
+              margin: -2px;
+              gap: 10px; } }
       .sectionThree .portfolio-cards .project-card .project-card_info .project-card_link {
         margin-top: 55px;
         font-family: Roboto Mono,monospace;
@@ -949,6 +959,9 @@
           text-transform: uppercase;
           margin-right: 15px;
           padding-top: 10px; }
+        @media screen and (max-width: 900px) and (min-width: 300px) {
+          .modal .modal-dialog .modal-content .modal-body .portfolio-modal_stack .portfolio-modal_stack-title {
+            margin: -30px -70px; } }
         .modal .modal-dialog .modal-content .modal-body .portfolio-modal_stack .tags {
           padding: 0; }
           .modal .modal-dialog .modal-content .modal-body .portfolio-modal_stack .tags li {
@@ -960,6 +973,16 @@
             padding: 5px 10px;
             margin-right: 10px;
             border-radius: 3px; }
+          @media screen and (max-width: 900px) and (min-width: 300px) {
+            .modal .modal-dialog .modal-content .modal-body .portfolio-modal_stack .tags li {
+              display: flex;
+              justify-content: center;
+              margin: 5px 5px; } }
+        @media screen and (max-width: 900px) and (min-width: 300px) {
+          .modal .modal-dialog .modal-content .modal-body .portfolio-modal_stack .tags {
+            display: flex;
+            margin: 20px 0px; } }
     @media screen and (max-width: 900px) and (min-width: 300px) {
       .modal .modal-dialog .modal-content {
-        margin: 0px 100px; } }
+        margin: 40px 30px;
+        width: 300px; } }

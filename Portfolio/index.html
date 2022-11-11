@@ -27,12 +27,13 @@
         </button>
     </section>
     <!-- Srcroll top end -->
+
     <!-- switcher start -->
-    <div class="style-switcher">
-        <span onclick="myFunction()" class="switcher_control"></span>
+    <div onclick="myFunction()" class="style-switcher">
+        <span title="Setting" class="switcher_control"></span>
         <div id="myDIV" class="switcher_list">
             <a class="switcher_link switcher_link_color"></a>
-            <a onclick="MYFunction()" class="switcher_link switcher_link_mono"></a>
+            <a onclick="monoFunction(true)" class="switcher_link switcher_link_mono"></a>
         </div>
     </div>
     <!-- switcher end -->
@@ -77,9 +78,9 @@
                     </nav>
                 </div>
             </div>
-            <div id="myNav" class="overlay d-lg-none col-md-12 d-sm-block">
+            <div id="myNav" class="overlay d-lg-none col-md-12 d">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark" ></i>
                 </a>
                 <div class="overlay-content">
                     <ul>
@@ -104,9 +105,9 @@
                     </ul>
                 </div>
             </div>
-            <span class="d-lg-none col-md-12 d-sm-block ham" style="font-size:30px;cursor:pointer; "
+            <span class="d-lg-none col-md-12 ham" style="font-size:30px;cursor:pointer; "
                 onclick="openNav()">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                <i class="fa-solid fa-bars" ></i>
             </span>
         </div>
     </div>
@@ -163,7 +164,8 @@
                         assigned to me at a high level. My role is to help you use all my skills and experience in such
                         a way.
                     </p>
-                    <a href="assets/image/KamranBy.pdf" class="section_btn site-btn">
+                    <a href="https://drive.google.com/file/d/1sJU2aSZ2sCvNHUvAr0lRKTmz_w2kz9le/view?usp=share_link"
+                        aria-label="downloadtest" title="download" class="section_btn site-btn">
                         <i class="fa-solid fa-download"></i>
                         <!-- <img src="assets/image/download.png" alt="Download"> -->
                         Download CV
@@ -179,7 +181,8 @@
                 <div class="col-md-10">
                     <h2 id="resume_header" class="section_title" style="text-indent: 0px;">Resume_</h2>
                     <p class="section_description">
-                        A software architecture can have multiple layers between the hardware and the end user. The front-end is abstract, simplifying the core component by providing a user-friendly interface.
+                        A software architecture can have multiple layers between the hardware and the end user. The
+                        front-end is abstract, simplifying the core component by providing a user-friendly interface.
                     </p>
                 </div>
             </div>
@@ -379,12 +382,70 @@
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
                                     data-modal="modal" data-modal-id="#add-to-cart">JavaScript</a>
                             </li>
-                            <a href="http://127.0.0.1:5500" class="project-card_link">www.furniture.com</a>
+                            <a href="https://github.com" class="project-card_link">www.furniture.com</a>
                         </ul>
                     </div>
+                    <div class="col-md-6 col-lg-5 project-card_img mt-3">
+                        <img class="" src="assets/image/banner-1.jpg" alt="project-img">
+                    </div>
+                    <div class="col-md-6 col-lg-7 mt-3 project-card_info">
+                        <h3 class="project-card_title">Mobile and desktop app for shose store</h3>
+                        <p class="project-card_description">
+                            New Design Breathable Sneaker Man Sport Shoes with Fly Knit Material
+                        </p>
+                        <p class="project-card_stack">Used stack:</p>
+                        <ul class="tags">
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">Html</a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">Css</a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">Scss</a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">JavaScript</a>
+                            </li>
+                        </ul>
+                        <a href="https://github.com" class="project-card_link">www.juan.com</a>
+                    </div>
+                    <div class="col-md-6 col-lg-5 mt-3 project-card_img">
+                        <img class="" src="assets/image/furniture.jpg" alt="project-img">
+                    </div>
+                    <div class="col-md-6 col-lg-7 mt-3 project-card_info">
+                        <h3 class="project-card_title">Mobile and desktop app for furniture store</h3>
+                        <p class="project-card_description">
+                            Best Quality modern office furniture for desktop and web.
+                        </p>
+                        <p class="project-card_stack">Used stack:</p>
+                        <ul class="tags">
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">Html</a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">Css</a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">Scss</a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                    data-modal="modal" data-modal-id="#add-to-cart">JavaScript</a>
+                            </li>
+                        </ul>
+                        <a href="https://github.com" class="project-card_link">www.furniture.com</a>
+                    </div>
                 </div>
-                <div id="2" class="row project-card arrival_content" data-toggle="modal" data-target="#portfolioModal"
-                    data-portfolio-tag="mobile apps">
+                <div id="2" class="row project-card arrival_content" style="display: none;" data-toggle="modal"
+                    data-target="#portfolioModal" data-portfolio-tag="mobile apps">
                     <div class="col-md-6 col-lg-5 project-card_img">
                         <img class="" src="assets/image/banner-1.jpg" alt="project-img">
                     </div>
@@ -412,11 +473,11 @@
                                     data-modal="modal" data-modal-id="#add-to-cart">JavaScript</a>
                             </li>
                         </ul>
-                        <a href="http://127.0.0.1:5502" class="project-card_link">www.juan.com</a>
+                        <a href="https://github.com" class="project-card_link">www.juan.com</a>
                     </div>
                 </div>
-                <div id="3" class="row project-card arrival_content" data-toggle="modal" data-target="#portfolioModal"
-                    data-portfolio-tag="landing-pages">
+                <div id="3" class="row project-card arrival_content" style="display: none;" data-toggle="modal"
+                    data-target="#portfolioModal" data-portfolio-tag="landing-pages">
                     <div class="col-md-6 col-lg-5 project-card_img">
                         <img class="" src="assets/image/furniture.jpg" alt="project-img">
                     </div>
@@ -444,7 +505,7 @@
                                     data-modal="modal" data-modal-id="#add-to-cart">JavaScript</a>
                             </li>
                         </ul>
-                        <a href="http://127.0.0.1:5500" class="project-card_link">www.furniture.com</a>
+                        <a href="https://github.com" class="project-card_link">www.furniture.com</a>
                     </div>
                 </div>
             </div>
@@ -472,7 +533,8 @@
                                             <p class="slider-carousel_title">Kamran Abilov</p>
                                             <p class="slider-carousel_caption">Project: Furniture page for ecommerce</p>
                                             <hr>
-                                            <p class="slider-carousel_description"> Best Quality modern office furniture for desktop and web.
+                                            <p class="slider-carousel_description"> Best Quality modern office furniture
+                                                for desktop and web.
                                             </p>
                                         </div>
                                     </div>
@@ -483,7 +545,8 @@
                                             <p class="slider-carousel_title">Kamran Abilov</p>
                                             <p class="slider-carousel_caption">Project: Juan page for ecommerce</p>
                                             <hr>
-                                            <p class="slider-carousel_description"> New Design Breathable Sneaker Man Sport Shoes with Fly Knit Material.
+                                            <p class="slider-carousel_description"> New Design Breathable Sneaker Man
+                                                Sport Shoes with Fly Knit Material.
                                             </p>
                                         </div>
                                     </div>
@@ -494,7 +557,8 @@
                                             <p class="slider-carousel_title">Kamran Abilov</p>
                                             <p class="slider-carousel_caption">Project: Furniture page for ecommerce</p>
                                             <hr>
-                                            <p class="slider-carousel_description"> Best Quality modern office furniture for desktop and web.
+                                            <p class="slider-carousel_description"> Best Quality modern office furniture
+                                                for desktop and web.
                                         </div>
                                     </div>
                                 </div>
@@ -535,7 +599,8 @@
                             <div class="post-cards_info">
                                 <p class="post-cards_date">October 06, 2022</p>
                                 <h3 class="post-cards_title">Mobile and desktop app for furniture store</h3>
-                                <p class="post-cards_description">Best Quality modern office furniture for desktop and web...
+                                <p class="post-cards_description">Best Quality modern office furniture for desktop and
+                                    web...
                                 </p>
                             </div>
                         </div>
@@ -550,7 +615,8 @@
                             <div class="post-cards_info">
                                 <p class="post-cards_date">July 25, 2022</p>
                                 <h3 class="post-cards_title">Mobile and desktop app for plant store</h3>
-                                <p class="post-cards_description">Best Quality modern office furniture for desktop and web...
+                                <p class="post-cards_description">Best Quality modern office furniture for desktop and
+                                    web...
                                 </p>
                             </div>
                         </div>
@@ -565,7 +631,8 @@
                             <div class="post-cards_info">
                                 <p class="post-cards_date">May 19, 2022</p>
                                 <h3 class="post-cards_title">Mobile and desktop app for shose store</h3>
-                                <p class="post-cards_description">Best Quality modern office furniture for desktop and web...
+                                <p class="post-cards_description">Best Quality modern office furniture for desktop and
+                                    web...
                                 </p>
                             </div>
                         </div>

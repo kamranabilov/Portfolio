@@ -24,22 +24,30 @@ function topFunction() {
 // click setting
 
 function myFunction() {
+  let settingall = document.querySelector('.switcher_control');
   let setting = document.getElementById('myDIV');
-  if (setting.style.display == 'none') {
-    setting.style.display = 'block';
+  if (setting.style.left == '0px' || settingall.style.left == '-50px') {
+    settingall.style.left = '-140px';
+    setting.style.left = '-90px';
   } else {
-    setting.style.display = 'none';
+    settingall.style.left = '-50px';
+    setting.style.left = 0;
   }
 }
 
 // click color change
 
-function MYFunction() {
-  var element = document.body;
-  element.classList.toggle('dark-mode');
+function monoFunction(test) {
+  let headercolor = document.querySelector('.dark-mode');
+  console.log(window.getComputedStyle(headercolor, '::before').backgroundColor);
+  if (test) {
+    headercolor.className = 'main-header dark-mode dark';
+  } else {
+  }
 }
 
 // PageYOFFset
+
 window.addEventListener('scroll', function () {
   let menu_wrapper = document.querySelector('.menu');
 
@@ -63,35 +71,56 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 //SideBar menu
-let x = document.getElementById("myNav");
-console.log(x)
+
+let x = document.getElementById('myNav');
+console.log(x);
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById('myNav').style.width = '106%';
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  // let open = document.getElementById('myNav');
+  // if (open.style.width==0) {
+  //   open.style.width = '106%'
+  // }
+  document.getElementById('myNav').style.width = '0%';
 }
 
 // My projects_
-let btnavlink=document.querySelectorAll(".btnnav");
-let content =document.querySelectorAll(".arrival_content");
+let btnavlink = document.querySelectorAll('.btnnav');
+let content = document.querySelectorAll('.arrival_content');
 for (let btn of btnavlink) {
-  btn.addEventListener("click",function(){
-    let active =document.querySelector(".contentshow");
+  btn.addEventListener('click', function () {
+    let active = document.querySelector('.contentshow');
     console.log(active);
-    active.classList.remove("contentshow")
-    this.classList.add("contentshow")
-    let index=this.getAttribute("id");
+    active.classList.remove('contentshow');
+    this.classList.add('contentshow');
+    let index = this.getAttribute('id');
     for (let div of content) {
-      if(index==div.getAttribute("id")){
-        div.style="display:flex";
+      if (index == div.getAttribute('id')) {
+        div.style = 'display:flex';
+      } else {
+        div.style = 'display:none';
       }
-      else{
-        div.style="display:none";
-      }
-      }
-    })
+    }
+  });
 }
 
-
+let btnav = document.querySelectorAll('.navbtn');
+let contentbody = document.querySelectorAll('.content_tab');
+for (let btn of btnav) {
+  btn.addEventListener('click', function () {
+    let active = document.querySelector('.active_show');
+    console.log(active);
+    active.classList.remove('active_show');
+    this.classList.add('active_show');
+    let index = this.getAttribute('id');
+    for (let div of contentbody) {
+      if (index == div.getAttribute('id')) {
+        div.style = 'display:block';
+      } else {
+        div.style = 'display:none';
+      }
+    }
+  });
+}
