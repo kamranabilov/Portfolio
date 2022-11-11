@@ -639,7 +639,7 @@
                     @media screen and (max-width: 900px) and (min-width: 300px) {
                         a{
                             display: flex;
-                            padding: 9px;
+                            padding: 7px;
                         }
                     }
                 }
@@ -713,7 +713,7 @@
                         @media screen and (max-width: 900px) and (min-width: 300px) {
                             a{
                                 display: flex;
-                                margin: -2px;
+                                margin: -4px;
                                 gap: 10px;
                             }
                         }
@@ -830,6 +830,11 @@
                         display: none;
                     }
                 }
+            }
+        }
+        @media screen and (max-width: 900px) and (min-width: 300px){
+            .carousel-inner{
+                padding-left: 85px;
             }
         }
         .slider-carousel_circle{

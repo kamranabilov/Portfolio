@@ -529,7 +529,7 @@
           @media screen and (max-width: 900px) and (min-width: 300px) {
             .sectionThree .portfolio-menu nav ul li a {
               display: flex;
-              padding: 9px; } }
+              padding: 7px; } }
     .sectionThree .portfolio-menu .contentshow {
       color: #6d56c1;
       text-decoration: underline; }
@@ -583,7 +583,7 @@
           @media screen and (max-width: 900px) and (min-width: 300px) {
             .sectionThree .portfolio-cards .project-card .project-card_info .tags li a {
               display: flex;
-              margin: -2px;
+              margin: -4px;
               gap: 10px; } }
       .sectionThree .portfolio-cards .project-card .project-card_info .project-card_link {
         margin-top: 55px;
@@ -678,6 +678,9 @@
       @media screen and (max-width: 900px) and (min-width: 300px) {
         .sectionFive .backgroundfive .carousel-inner .carousel-item .carousel-item {
           display: none; } }
+    @media screen and (max-width: 900px) and (min-width: 300px) {
+      .sectionFive .backgroundfive .carousel-inner {
+        padding-left: 85px; } }
     .sectionFive .backgroundfive .slider-carousel_circle {
       height: 88px;
       width: 88px;
