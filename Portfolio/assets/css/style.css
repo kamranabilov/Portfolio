@@ -529,7 +529,7 @@
           @media screen and (max-width: 900px) and (min-width: 300px) {
             .sectionThree .portfolio-menu nav ul li a {
               display: flex;
-              padding: 7px; } }
+              padding: 5px; } }
     .sectionThree .portfolio-menu .contentshow {
       color: #6d56c1;
       text-decoration: underline; }
