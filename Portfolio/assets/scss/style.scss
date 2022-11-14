@@ -522,7 +522,7 @@
                 content: "";
                 border-radius: 50%;
                 background-color: #fff;
-                left: 112px;
+                left: 120px;
             }
             @media screen and (max-width: 900px) and (min-width: 300px){
                 &::before{
@@ -577,6 +577,12 @@
     .progress-list_skill{
         .progress-list_skill-value{
             float: right;
+            #five{
+                color: #6d56c1;
+            }
+            i{
+                color: rgb(100, 100, 100);
+            }
         }
         .progress{
             height: 6px;
@@ -1057,6 +1063,7 @@
                         font-size: 14px;
                         line-height: 20px;
                         text-transform: uppercase;
+                        text-decoration: none;
                         padding: 15px;
                         min-width: 170px;
                         text-align: center;
@@ -1224,7 +1231,7 @@
         }
         @media screen and (max-width: 900px) and (min-width: 300px) {
             .modal-content{
-                margin: 40px 30px;
+                margin: 65px 30px;
                 width: 300px;
             }
         }
