@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass assets/scss/style.scss assets/css/style.css -w"
@@ -10,5 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.3"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
