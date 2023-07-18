@@ -814,9 +814,13 @@
             margin-bottom: 20px; }
             .backgroundfooter .sectionfooter .contacts .contacts_social ul li a {
               color: #fff;
-              text-decoration: underline;
+              text-decoration: none;
               padding: 6px 0;
               transition: all .3s; }
+              .backgroundfooter .sectionfooter .contacts .contacts_social ul li a:hover {
+                color: rgb(1, 1, 170);
+                text-decoration: underline;
+                transition: all .3s; }
       .backgroundfooter .sectionfooter .contacts .contacts_form .contacts_form-title {
         font-size: 16px;
         line-height: 24px; }
